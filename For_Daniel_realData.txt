@@ -1,0 +1,29 @@
+  810  # Exercise 2.13.2
+  811  cd introscicomp2014/UNIX/Data/fasta/
+  812  head -n3 407228326.fasta
+  813  wc -l *.fasta
+  814  tail -n+2 407228326.fasta
+  815  tail -n+2 407228326.fasta | tr -d "\n"
+  816  tail -n+2 407228326.fasta | tr -d "\n" | wc -c
+  817  tail -n+2 407228412.fasta | tr -d "\n" | wc -c
+  818  tail -n+2 E.coli.fasta | tr -d "\n" | wc -c
+  819  tail -n+2 407228326.fasta | tr -d "\n" | grep -o "ATGTACATA"
+  820  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o "ATGC" | wc -l
+  821  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o [A,T] | wc -l
+  822  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o [G,C] | wc -l
+  823  # Exercise 2.13.3
+  824  cd ../
+  825  ls
+  826  head -n13900 otoos10.txt | tail -n+265 > darwin.txt
+  827  grep -c -w evolution darwin.txt
+  828  grep -c -w evolved darwin.txt
+  829  grep -c -w "natural selection" darwin.txt
+  830  grep -c -w -i "Wallace" darwin.txt 
+  831  # Exercise 2.13.4
+  832  cd Temperatures/
+  833  cat 1800.csv 1801.csv 1802.csv 1803.csv | grep 'MAX'| grep 180[0-3]0101 > MaxTempJan01.txt
+  834  cat 1800.csv 1801.csv 1802.csv 1803.csv | grep 'MAX'| grep 1800[01-12][01-31] |cut -d , -f 4 | sort -n | tail -n 1
+  835  cat 1800.csv 1801.csv 1802.csv 1803.csv | grep 'MAX'| grep 18000205 |cut -d , -f 4 | sort -n | tail -n 1 > MaxTempFeb05.txt
+  836  cat 1800.csv 1801.csv 1802.csv 1803.csv | grep 'MAX'| grep 18000505 |cut -d , -f 4 | sort -n | tail -n 1 > MaxTempMay05.txt
+  837  history | tail -n 50 > For_Daniel_realData.txt
+

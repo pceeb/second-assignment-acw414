@@ -1,0 +1,30 @@
+  729  pwd
+  730  ls
+  731  touch TestFile
+  732  mv TestFile TestFile2
+  733  rm TestFile2
+  734  mkdir TestDirectory
+  735  touch TestDirectory/Test.txt
+  736  rmdir TestDirectory
+  737  rm TestDirectory/Test.txt 
+  738  rmdir TestDirectory/
+  739  echo "My first line." > test.txt
+  740  cat test.txt 
+  741  echo "My second line" >> test.txt 
+  742  ls / >> ListRootDir.txt
+  743  cat ListRootDir.txt 
+  744  mkdir TestWild
+  745  cd TestWild/
+  746  touch File1.txt
+  747  touch File2.txt
+  748  touch File3.txt
+  749  touch File4.txt
+  750  touch File1.csv
+  751  touch File2.csv
+  752  touch File3.csv
+  753  touch File4.csv
+  754  touch Anotherfile.csv
+  755  touch Anotherfile.txt
+  756  ls
+  757  ls | wc -l
+  758  history | tail -n 30 > For_Daniel_Wildcard.txt

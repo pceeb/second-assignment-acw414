@@ -1,0 +1,18 @@
+  740  ls *
+  741  ls File*
+  742  ls *.txt
+  743  ls File?.txt
+  744  ls File[1-2].txt
+  745  ls File[!3].txt
+  746  wget http://www.cep.unep.org/pubs/legislation/spawannxs.txt
+  747  head -n 50 spawannxs.txt 
+  748  grep Orchidaceae spawannxs.txt 
+  749  grep -c Orchidaceae spawannxs.txt
+  750  grep Falco spawannxs.txt 
+  751  grep -i Falco spawannxs.txt 
+  752  grep -i ara spawannxs.txt 
+  753  grep -i -w ara spawannxs.txt 
+  754  grep -i -w -A 1 ara spawannxs.txt
+  755  grep -i -w -n ara spawannxs.txt
+  756  grep -i -w -v ara spawannxs.txt
+  757  history | tail -n 30 > For_Daniel_grep.txt
